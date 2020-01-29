@@ -1,5 +1,3 @@
-#!/bin/bash
-
 0.Where am i?,
 1.What's in there?,
 2.There is no palce like home,
