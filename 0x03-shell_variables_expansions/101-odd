@@ -1,2 +1,2 @@
 #!/bin/bash
-sed n\;g | sed '/^$/ d'
+sed '2~2d'
