@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script To file, or not to file
 
-filename="holberton"
+filename="holbertonschool"
 
 if [ -e "$filename" ]
 then
