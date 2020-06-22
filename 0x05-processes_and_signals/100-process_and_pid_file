@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# comment
+
+sudo touch /var/run/holbertonscript.pid
+echo '$!' > /var/run/holbertonscript.pid
+
+sigterm () {
+    echo "I hate the kill command"
+    sudo rm /var/run/holbertonscript.pid
+}
+
+sigint () {
+    echo "Y U no love me?!"
+}
+
+sigquit () {
+    sudo rm /var/run/holbertonscript.pid
+}
+
+trap sigterm SIGTERM
+trap sigint SIGINT
+trap sigquit SIGQUIT
+
+while (( 1 ))
+do
+    echo "To infinity and beyond"
+done
