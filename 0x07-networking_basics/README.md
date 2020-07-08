@@ -26,7 +26,7 @@ System engineering & DevOps ― Networking
 ---
 ## Installation
 ```
-git clone https://github.com/sumin3/holberton-system_engineering-devops.git
+git clone https://github.com/NICOLASTOBON/holberton-system_engineering-devops.git
 ```
 ```
 cd 0x07-networking_basics
