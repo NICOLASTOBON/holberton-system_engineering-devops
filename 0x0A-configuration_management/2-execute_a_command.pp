@@ -1,6 +1,5 @@
 # Using Puppet, create a manifest that kills a process named killmenow.
 
-Exec { 'killmenow':
-  path    => '/usr/bin/',
-  command => 'pkill -f ./killmenow',
+exec { 'pkill -f ./killmenow':
+  path => '/usr/bin',
 }
