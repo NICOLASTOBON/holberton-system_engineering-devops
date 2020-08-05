@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# webstack debuggin 1, restart apache
+
+sudo service apache2 restart
