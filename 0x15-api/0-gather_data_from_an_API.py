@@ -12,5 +12,6 @@ if __name__ == '__main__':
 
     completed = len([c for c in todos if c.get('completed')])
 
-    print(f'Employee {user} is done with tasks({completed}/{len(todos)}):')
+    print('Employee {} is done with tasks({}/{}):'.format(
+        user, completed, len(todos)))
     [print('\t ', t.get('title')) for t in todos if t['completed']]
