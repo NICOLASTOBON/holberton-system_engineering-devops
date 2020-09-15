@@ -11,10 +11,10 @@ if __name__ == '__main__':
     todos = requests.get(URL + 'todos?userId={}'.format(argv[1])).json()
     usr = requests.get(URL + 'users/{}'.format(argv[1])).json().get('username')
 
-    fileName = f'{argv[1]}.csv'
+    fileName = '{}.csv'.format(argv[1])
 
     with open(fileName, 'w', newline='') as f:
-        writer = csv.writer(f, delimiter=',', quotechar="'")
+        writer = csv.writer(f, delimiter=',', quoting=csv.QUOTE_ALL)
         for todo in todos:
             writer.writerow([
                 todo['userId'],
