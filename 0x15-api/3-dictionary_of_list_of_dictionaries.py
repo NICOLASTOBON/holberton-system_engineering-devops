@@ -19,4 +19,4 @@ if __name__ == "__main__":
                 "completed": todo['completed'],
             } for todo in todos]
     with open('todo_all_employees.json', 'w') as f:
-        json.dump(new_dict, f, indent=4)
+        json.dump(new_dict, f)
